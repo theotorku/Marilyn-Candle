@@ -894,67 +894,62 @@ img {
 }
 
 /* ==========================================================================
-   Newsletter Section
+   Why Us Section
    ========================================================================== */
-.newsletter {
-    background-color: var(--primary-bg);
+.why-us {
+    background-color: var(--white);
     padding: 8rem 2rem;
-    text-align: center;
     border-top: 1px solid rgba(0,0,0,0.05);
 }
 
-.newsletter-content {
+.why-us-header {
+    text-align: center;
     max-width: 600px;
+    margin: 0 auto 5rem;
+}
+
+.why-us-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.newsletter h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.why-card {
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    border: 1px solid rgba(0,0,0,0.06);
+    transition: var(--transition);
+}
+
+.why-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+}
+
+.why-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1.5rem;
+}
+
+.why-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.why-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
     font-style: italic;
 }
 
-.newsletter p {
+.why-text {
     color: var(--text-muted);
-    margin-bottom: 2.5rem;
-}
-
-.newsletter-form {
-    display: flex;
-    gap: 0;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.newsletter-form input {
-    flex: 1;
-    padding: 1rem 1.5rem;
-    border: 1px solid var(--text-muted);
-    background: transparent;
-    font-family: var(--font-body);
-    font-size: 1rem;
-    outline: none;
-    border-right: none;
-}
-
-.newsletter-form input:focus {
-    border-color: var(--text-main);
-}
-
-.newsletter-form .btn {
-    border: 1px solid var(--text-main);
-}
-
-.newsletter-success {
-    display: none;
-    color: var(--accent);
-    font-weight: 700;
-    margin-top: 1.5rem;
-    font-size: 1.05rem;
-}
-
-.newsletter-success.show {
-    display: block;
+    font-size: 0.95rem;
+    line-height: 1.7;
 }
 
 /* ==========================================================================
@@ -1052,6 +1047,9 @@ img {
     .product-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    .why-us-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
     .story-container {
         flex-direction: column;
         gap: 4rem;
@@ -1086,12 +1084,10 @@ img {
     .footer-links {
         grid-template-columns: repeat(2, 1fr);
     }
-    .newsletter-form {
-        flex-direction: column;
-    }
-    .newsletter-form input {
-        border-right: 1px solid var(--text-muted);
-        margin-bottom: 1rem;
+    .why-us-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
     }
     /* Disable custom cursor on mobile */
     .cursor-dot, .cursor-outline {

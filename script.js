@@ -227,20 +227,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // =========================================================================
-    // Newsletter Form
-    // =========================================================================
-    const newsletterForm = document.getElementById('newsletter-form');
-    const newsletterSuccess = document.getElementById('newsletter-success');
-
-    if (newsletterForm) {
-        newsletterForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const email = newsletterForm.querySelector('input[type="email"]').value;
-            if (email) {
-                newsletterForm.style.display = 'none';
-                if (newsletterSuccess) newsletterSuccess.classList.add('show');
-            }
-        });
-    }
 });
