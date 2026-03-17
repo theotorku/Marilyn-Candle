@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.M Candles | Handcrafted Luxury Candles</title>
+    <meta name="description" content="P.M Candles crafts hand-poured luxury soy candles with premium fragrance oils, sustainable ingredients, and reusable glass vessels. Illuminate your space.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="P.M Candles | Handcrafted Luxury Candles">
+    <meta property="og:description" content="Hand-poured luxury soy candles crafted with premium fragrance oils and sustainable ingredients.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=1200&auto=format&fit=crop">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="P.M Candles | Handcrafted Luxury Candles">
+    <meta name="twitter:description" content="Hand-poured luxury soy candles crafted with premium fragrance oils and sustainable ingredients.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%231A1A1A'/><text x='32' y='46' font-family='serif' font-size='28' font-weight='bold' fill='%23CFA670' text-anchor='middle'>P.M</text></svg>">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CSS for Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip to Content -->
+    <a href="#collections" class="skip-link">Skip to main content</a>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="#collections" class="nav-link">Shop</a>
+                <a href="#story" class="nav-link">Our Story</a>
+            </div>
+            <a href="#" class="logo"><span class="logo-m">P.M</span> Candles</a>
+            <div class="nav-right">
+                <div class="nav-icons">
+                    <a href="#" class="icon-link" aria-label="Search products"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#" class="icon-link" aria-label="My account"><i class="fa-regular fa-user"></i></a>
+                    <a href="#" class="icon-link cart-toggle" aria-label="Shopping cart, 0 items"><i class="fa-solid fa-bag-shopping"></i> <span class="cart-count">0</span></a>
+                </div>
+                <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#collections" class="mobile-link">Shop</a>
+            <a href="#story" class="mobile-link">Our Story</a>
+            <a href="#" class="mobile-link">All Candles</a>
+            <a href="#" class="mobile-link">Gift Sets</a>
+        </div>
+    </nav>
+
+    <!-- Cart Drawer -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="cart-close" aria-label="Close cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <p class="cart-empty">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer" id="cart-footer" style="display: none;">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            <button class="btn btn-primary cart-checkout">Checkout</button>
+        </div>
+    </aside>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-bg" data-parallax data-bg="https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=2574&auto=format&fit=crop" style="background-image: url('https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=2574&auto=format&fit=crop');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1500">
+            <h4 class="hero-subtitle">Illuminate Your Space</h4>
+            <h1 class="hero-title">Hand-poured Luxury<br>in Every Flame.</h1>
+            <a href="#collections" class="btn btn-primary">Discover the Collection <span class="arrow-icon">→</span></a>
+        </div>
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll</p>
+        </div>
+    </header>
+
+    <!-- Featured Collections Section -->
+    <section class="collections" id="collections">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">Curated Scents</h2>
+            <p class="section-desc">Experience our signature blends, crafted to evoke emotion and memory.</p>
+        </div>
+        
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100" data-product-name="Midnight Amber" data-product-price="45.00" data-product-image="https://images.unsplash.com/photo-1572726729207-a78d6feb18d7?q=80&w=1528&auto=format&fit=crop">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1572726729207-a78d6feb18d7?q=80&w=1528&auto=format&fit=crop" alt="Midnight Amber Candle" class="product-image" loading="lazy">
+                    <div class="product-overlay">
+                        <button class="btn btn-secondary btn-quick-add" aria-label="Quick add Midnight Amber to cart">Quick Add</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Midnight Amber</h3>
+                    <p class="product-notes">Sandalwood, Vanilla, Dark Musk</p>
+                    <p class="product-price">$45.00</p>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card" data-aos="fade-up" data-aos-delay="200" data-product-name="Velvet Peony" data-product-price="48.00" data-product-image="https://images.unsplash.com/photo-1610214304859-967b5eb1dc02?q=80&w=1587&auto=format&fit=crop">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1610214304859-967b5eb1dc02?q=80&w=1587&auto=format&fit=crop" alt="Velvet Peony Candle" class="product-image" loading="lazy">
+                    <div class="product-overlay">
+                        <button class="btn btn-secondary btn-quick-add" aria-label="Quick add Velvet Peony to cart">Quick Add</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Velvet Peony</h3>
+                    <p class="product-notes">Peony, Jasmine, White Wood</p>
+                    <p class="product-price">$48.00</p>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card" data-aos="fade-up" data-aos-delay="300" data-product-name="Smoked Fig" data-product-price="52.00" data-product-image="https://images.unsplash.com/photo-1605814574971-f92e9e625a66?q=80&w=1635&auto=format&fit=crop">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1605814574971-f92e9e625a66?q=80&w=1635&auto=format&fit=crop" alt="Smoked Fig Candle" class="product-image" loading="lazy">
+                    <div class="product-overlay">
+                        <button class="btn btn-secondary btn-quick-add" aria-label="Quick add Smoked Fig to cart">Quick Add</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Smoked Fig</h3>
+                    <p class="product-notes">Ripe Fig, Cedar, Vetiver</p>
+                    <p class="product-price">$52.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center view-all-wrap" data-aos="fade-up" data-aos-delay="400">
+            <a href="#" class="link-view-all">View All Products</a>
+        </div>
+    </section>
+
+    <!-- Parallax Quote Section -->
+    <section class="parallax-quote">
+        <div class="parallax-bg" data-parallax data-bg="https://images.unsplash.com/photo-1507646870503-48b26e10db50?q=80&w=2670&auto=format&fit=crop" style="background-image: url('https://images.unsplash.com/photo-1507646870503-48b26e10db50?q=80&w=2670&auto=format&fit=crop');"></div>
+        <div class="parallax-overlay"></div>
+        <div class="quote-content" data-aos="zoom-in" data-aos-duration="1000">
+            <p class="quote-text">"Lighting a candle is not just about scent; it's about setting the stage for a moment of peace in a chaotic world."</p>
+            <span class="quote-author">- The P.M Candles Promise</span>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story" id="story">
+        <div class="story-container">
+            <div class="story-image-wrap" data-aos="fade-right" data-aos-duration="1200">
+                <img src="https://images.unsplash.com/photo-1628151015968-3a4429e9ef04?q=80&w=1590&auto=format&fit=crop" alt="Pouring hot wax" class="story-image">
+                <div class="story-image-accent"></div>
+            </div>
+            <div class="story-content" data-aos="fade-left" data-aos-duration="1200">
+                <h4 class="section-subtitle">The Artisan Approach</h4>
+                <h2 class="section-title">Crafted with Intention.</h2>
+                <p class="story-text">Every P.M Candles candle is meticulously hand-poured in small batches using sustainable, non-toxic soy wax and premium fragrance oils. We believe in creating products that not only smell divine but are safe for your home and the environment.</p>
+                <p class="story-text">From the crackling wooden wicks to our reusable glass vessels, every detail is designed to elevate your everyday rituals.</p>
+                <a href="#" class="btn btn-outline">Read Our Full Story</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-content" data-aos="fade-up">
+            <h2>Join the Inner Circle</h2>
+            <p>Subscribe for exclusive access to new releases, secret sales, and 15% off your first order.</p>
+            <form class="newsletter-form" id="newsletter-form">
+                <label for="newsletter-email" class="sr-only">Email address</label>
+                <input type="email" id="newsletter-email" placeholder="Your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+            <p class="newsletter-success" id="newsletter-success">Thank you for subscribing!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2 class="footer-logo"><span class="logo-m">P.M</span> Candles</h2>
+                <p>Bringing warmth and luxury to your everyday spaces.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#">All Candles</a></li>
+                        <li><a href="#">Bestsellers</a></li>
+                        <li><a href="#">Gift Sets</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="link-column">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Ingredients</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Journal</a></li>
+                    </ul>
+                </div>
+                <div class="link-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 P.M Candles. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
