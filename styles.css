@@ -958,86 +958,38 @@ img {
 .footer {
     background-color: var(--dark-bg);
     color: var(--white);
-    padding: 6rem 2rem 2rem;
+    padding: 4rem 2rem;
 }
 
-.footer-container {
+.footer-minimal {
     max-width: 1400px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1.5fr 2fr;
-    gap: 4rem;
-    margin-bottom: 4rem;
-}
-
-.footer-brand p {
-    color: rgba(255,255,255,0.6);
-    margin: 1rem 0 2rem;
-    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
 }
 
 .social-links {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .social-links a {
-    color: var(--white);
+    color: rgba(255,255,255,0.6);
     font-size: 1.2rem;
+    transition: var(--transition);
 }
 
 .social-links a:hover {
     color: var(--accent);
 }
 
-.footer-links {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
-
-.link-column h3 {
-    font-family: var(--font-body);
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 1.5rem;
-    color: var(--accent);
-}
-
-.link-column ul li {
-    margin-bottom: 1rem;
-}
-
-.link-column a {
-    color: rgba(255,255,255,0.7);
-    font-size: 0.95rem;
-}
-
-.link-column a:hover {
-    color: var(--white);
-    padding-left: 5px;
-}
-
-.footer-bottom {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: rgba(255,255,255,0.5);
-    font-size: 0.85rem;
-}
-
-.legal-links {
-    display: flex;
-    gap: 2rem;
-}
-
-.legal-links a:hover {
-    color: var(--white);
+.footer-copy {
+    color: rgba(255,255,255,0.4);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
 }
 
 /* ==========================================================================
@@ -1053,9 +1005,6 @@ img {
     .story-container {
         flex-direction: column;
         gap: 4rem;
-    }
-    .footer-container {
-        grid-template-columns: 1fr;
     }
     .hero-title {
         font-size: 4rem;
@@ -1081,9 +1030,6 @@ img {
     .quote-text {
         font-size: 1.8rem;
     }
-    .footer-links {
-        grid-template-columns: repeat(2, 1fr);
-    }
     .why-us-grid {
         grid-template-columns: 1fr;
         max-width: 400px;
@@ -1098,13 +1044,5 @@ img {
 @media (max-width: 480px) {
     .hero-title {
         font-size: 2.5rem;
-    }
-    .footer-links {
-        grid-template-columns: 1fr;
-    }
-    .footer-bottom {
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
     }
 }
